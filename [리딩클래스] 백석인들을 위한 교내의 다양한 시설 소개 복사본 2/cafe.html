@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>웹 페이지 틀</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      
+    }
+
+    nav {
+     
+      background-color: white;
+      color: black;
+      padding: 10px;
+      
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin-right: 50px;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      font-size: x-large;
+      font-weight: bolder;
+    }
+    
+    .figure-container {
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    justify-content: center;
+    margin: 50px;
+    
+    
+  }
+
+  .figure-container img {
+    margin-right: 20px; /* 이미지 간격 조정 */
+  }
+
+  .figure-container2 {
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    justify-content: center;
+    margin: 50px;
+    
+    
+  }
+
+  .figure-container2 img {
+    margin-right: 20px; /* 이미지 간격 조정 */
+  }
+  
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: skyblue;
+    text-decoration: none;
+    border-radius: 4px;
+    border: solid;
+  }
+
+  .img {
+    border-radius: 20%;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    
+  </header>
+
+  <hr>
+
+  <nav>
+    <ul>
+      <li style="font-size: x-large; color: blue;"><a href="main.html">백석나비 A</a></li>
+      <li><a href="restaurant.html">음식점</a></li>
+      <li><a href="store.html">편의점</a></li>
+      <li><a href="convenient.html">편의시설</a></li>
+      <li><a href="culture.html">문화시설</a></li>
+      <li><a href="add.html">추가정보</a></li>
+    </ul>
+  </nav>
+  <main>
+    <hr>
+    <img src="./image/univer.png" alt="샘플1" width="100%">
+    <hr>
+    <div class="figure-container">
+        <figure>
+          <img src="./image/res.jpeg" alt="샘플1" width="180px" class="img">
+          <figcaption>
+            <h4> <a href="cafeteria.html" class="button">학식당</a></h4>
+            cafeteria<br>学校食堂<br>学校食堂
+        </figcaption>
+        </figure>
+        <figure>
+          <img src="./image/cafe.jpeg" alt="샘플2" width="180px" class="img">
+          <figcaption>
+            <h4><a href="cafe.html" class="button">카페</a></h4>
+            Cafe<br>咖啡馆<br>カフェ
+        </figcaption>
+        </figure>
+    </div>
+    <hr>
+    <h4 style="color: gray;">Introduction Cafe</h4>
+    <h1>교내 카페 소개</h1>
+    <p>백석나비A는 백석대 학우분들의 편의를 위해 최선을 다하겠습니다.</p>
+    <br><br>
+    <hr>
+
+    <br><br>
+    <h1>뷰리카페(베네스다 공원)</h1>
+    <h3 style=" font-weight: normal;">백석대학교의 대표 카페</h3>
+    
+    
+    <h4>위치 : 베네스다 공원</h4>
+    <h4>영엉 시간 : 08:00 ~ 16:30</h4>
+
+    <hr><hr>
+
+    <br><br>
+    <h1>뷰리카페(조형관)</h1>
+    <h3 style=" font-weight: normal;">백석대학교의 대표 카페</h3>
+    
+    
+    <h4>위치 : 조형관 체육관 사이</h4>
+    <h4>영엉 시간 : 08:00 ~ 16:30</h4>
+
+    <hr><hr>
+
+
+    <br><br>
+    <h1>기숙사 EDIYA 카페</h1>
+    <h3 style=" font-weight: normal;">북카페와 같이 운영 / 쾌적한 환경에서 공부와 과제 가능 </h3>
+    <h4>위치 : 백석 생활관 2F</h4>
+    <h4>영엉 시간 : 08:00 ~ 18:00</h4>
+    
+    <br><br>
+
+    <hr><hr>
+    <h1>베이커리 & 커피</h1>
+    <h3 style=" font-weight: normal;">스콘, 소금빵등 다양한 베이커리와 음료판매<br>좌석이 마련되어 있어 취식과 함꼐 간단한 공부 및 과제 가능</h3>
+    <h4>위치 : 글로벌 외식관 1F</h4>
+    <h4>영엉 시간 : 09:00 ~ 18:00</h4>
+   
+
+   
+    </main>
+
+    <hr>
+  
+    <footer>
+      <div style="color:black; text-shadow: 1px 2px  rgb(141, 141, 141);">© 2023 COOPERATION_LEADING_CLASS</div>
+      <div>주) 백석나비A (김민서, 김세이, 배지훈, 오채은) </div>
+      <div>TEL) 041-000-0000</div>
+      <div>EMAIL) EMAIL@EMAIL.com</div>
+  </div>
+    </footer>
+  </body>
+  </html>
+  
+    

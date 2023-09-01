@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>웹 페이지 틀</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      
+    }
+
+    nav {
+     
+      background-color: white;
+      color: black;
+      padding: 10px;
+      
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin-right: 50px;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:hover {
+      font-size: x-large;
+      font-weight: bolder;
+    }
+    
+    .figure-container {
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    justify-content: center;
+    margin: 50px;
+    
+    
+  }
+
+  .figure-container img {
+    margin-right: 20px; /* 이미지 간격 조정 */
+  }
+
+  .figure-container2 {
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    justify-content: center;
+    margin: 50px;
+    
+    
+  }
+
+  .figure-container2 img {
+    margin-right: 20px; /* 이미지 간격 조정 */
+  }
+  
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: skyblue;
+    text-decoration: none;
+    border-radius: 4px;
+    border: solid;
+  }
+
+  .img {
+    border-radius: 20%;
+  }
+  </style>
+</head>
+<body>
+  <header>
+   
+
+
+  <hr>
+
+  <nav>
+    <ul>
+      <li style="font-size: x-large; color: blue;"><a href="main.html">백석나비 A</a></li>
+      <li><a href="restaurant.html">음식점</a></li>
+      <li><a href="store.html">편의점</a></li>
+      <li><a href="convenient.html">편의시설</a></li>
+      <li><a href="culture.html">문화시설</a></li>
+      <li><a href="add.html">추가정보</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <hr>
+    <img src="./image/univer.png" alt="샘플1" width="100%">
+    <hr>
+    <h4 style="color: gray;">Introduction University Facilities</h3>
+    <h1>교내시설 소개</h1>
+    <p>백석나비A는 백석대 학우분들의 편의를 위해 최선을 다하겠습니다.</p>
+
+    <div class="figure-container">
+    <figure>
+      <img src="./image/food.jpeg" alt="샘플1" width="270px" class="img">
+      <figcaption>학식당 | 카페
+        <h4> <a href="restaurant.html" class="button">음식점</a></h4>
+        Restaurant <br> 饭馆 <br> 飲食店 </figcaption>
+    </figure>
+    <figure>
+      <img src="./image/sto.jpeg" alt="샘플2" width="270px" class="img">
+      <figcaption>교내 편의점
+        <h4><a href="store.html" class="button">편의점</a></h4>
+        Convenience store <br> 便利店  <br>コンビニエンスストア
+</figcaption>
+    </figure>
+    <figure>
+      <img src="./image/lib.jpeg" alt="샘플3" width="270px" class="img">
+      <figcaption>서점 | 휴게실 | 인쇄점 | 도서관 | 기타 시설<h4><a href="convenient.html" class="button">편의시설</a></h4>
+        Convenient facilities <br> 便利设施 <br> 便宜施設
+      </figcaption>
+    </figure>
+    <figure>
+      <img src="./image/hhh.jpeg" alt="샘플4" width="270px" class="img">
+      <figcaption>교회 | 박물관 | 헬스장 | 오락 | 상담센터<h4><a href="culture.html" class="button">문화시설</a></h4>
+        Cultural facilities <br> 文化设施 <br> 文化施設
+      </figcaption>
+    </figure>
+  </div>
+
+  <hr>
+
+  <h4 style="color: gray;">Additional Information</h3>
+    <h1>추가정보</h2>
+    <p>흡연 구역, 학교 생활 꿀팁, 불편사항 해결 방안 제시!</p>
+
+    <div class="figure-container2">
+      <figure>
+        <img src="./image/smoke.jpeg" alt="샘플1" width="270px" class="img">
+        <figcaption>
+          <h4> <a href="smoke.html" class="button">흡연 구역</a></h4>
+          Smoking area <br> 吸烟区 <br> 喫煙区域
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./image/honey.png" alt="샘플2" width="270px" class="img">
+        <figcaption>
+          <h4><a href="honey.html" class="button">학교 생활 꿀팁</a></h4>
+          Tips for university life <br> 学校生活小贴士 <br> 学校生活のコツ
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./image/소리.png" alt="샘플3" width="270px" class="img">
+        <figcaption><h4><a href="error.html" class="button">불편사항</a></h4>
+          Inconvenient matters <br> 不便事项 <br> 不便事項
+        </figcaption>
+      </figure>
+      </div>
+  </main>
+
+  <hr>
+
+  <footer>
+    <div style="color:black; text-shadow: 1px 2px  rgb(141, 141, 141);">© 2023 COOPERATION_LEADING_CLASS</div>
+    <div>주) 백석나비A (김민서, 김세이, 배지훈, 오채은) </div>
+    <div>TEL) 041-000-0000</div>
+    <div>EMAIL) EMAIL@EMAIL.com</div>
+</div>
+  </footer>
+</body>
+</html>
+
