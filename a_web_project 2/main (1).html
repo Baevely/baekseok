@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- https://tour.chungnam.go.kr/html/kr/guide/guide_0705.html -->
+    <div id="wrap_all">
+        <header id="header">
+            <a href="./main (1).html">
+                <div id="logo1_div"><img src=./img/logo1.png alt="로고"></div>
+            </a>
+        </header>
+        <div id="wrap_contents" style="height: 800px;">
+            <nav id="main_nav">
+                <ul>
+                    <li id="li_menu" style="width:100%; box-shadow: 0px 5px 5px -7px black;">LIST</li>
+                    <a href="tour_info_1.html">
+                        <li>충청남도 관광정보</li>
+                    </a>
+                    <a href="main.html">
+                        <li>MBTI 충남 여행</li>
+                    </a>
+                    <a href="event.html">
+                        <li>이 달의 이벤트</li>
+                    </a>
+                    <a href="main.html">
+                        <li>충남의 소리</li>
+                    </a>
+                </ul>
+            </nav>
+
+            <div id="main_contents" style="height: 800px; text-align: center;">
+                <div id="wrap_main">
+                    <div>
+                        <P>
+                            <h2>충남 어디까지 가봤니?</h2>
+                            충남에서 어딜 가야할지 고민 중인가요? 충남 여행의 모든 것을 가이드!<br>
+                            충청남도 여행을 준비하는 여행객들을 위해! <b>관광명소, 테마여행, 맛집, 숙박업소</b>의 정보 제공.<br>
+                            우리 <b>'MBTI 충남 여행'</b>에서 MBTI 보고 충남 여행 코스 추천 받자~ <br>
+                            <b>'이 달의 이벤트'</b>에서 현재 충남에서 진행 중인 이벤트 확인하고 푸짐한 혜택 받자!!
+                        </P>
+
+                    </div>
+
+                    <!-- 슬라이드 구현 -->
+                    <div class="slidebox">
+                        <input type="radio" name="slide" id="slide01" checked>
+                        <input type="radio" name="slide" id="slide02">
+                        <input type="radio" name="slide" id="slide03">
+                        <input type="radio" name="slide" id="slide04">
+                        <input type="radio" name="slide" id="slide05">
+                        <input type="radio" name="slide" id="slide06">
+
+                        <ul class="slidelist">
+                            <li class="slideitem">
+                                <div>
+                                    <div class="a_wrap">
+                                        <a>
+                                            <img src="./img/이벤트1.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slideitem">
+                                <div>
+                                    <div class="a_wrap">
+                                        <a>
+                                            <img src="./img/이벤트2.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slideitem">
+                                <div>
+                                    <div class="a_wrap">
+                                        <a>
+                                            <img src="./img/이벤트3.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slideitem">
+                                <div>
+                                    <div class="a_wrap">
+                                        <a>
+                                            <img src="./img/이벤트4.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slideitem">
+                                <div>
+                                    <div class="a_wrap">
+                                        <a>
+                                            <img src="./img/이벤트5.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slideitem">
+                                <div>
+                                    <div class="a_wrap">
+                                        <a>
+                                            <img src="./img/이벤트6.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <ul class="paginglist">
+                            <li>
+                                <label for="slide01"></label>
+                            </li>
+                            <li>
+                                <label for="slide02"></label>
+                            </li>
+                            <li>
+                                <label for="slide03"></label>
+                            </li>
+                            <li>
+                                <label for="slide04"></label>
+                            </li>
+                            <li>
+                                <label for="slide05"></label>
+                            </li>
+                            <li>
+                                <label for="slide06"></label>
+                            </li>
+                        </ul>
+                    </div>
+                     <!-- 슬라이드 구현끝 -->
+
+
+                     <img src="./img/충남 카페.png" width="350px" style="float:left">
+                     <img id="lap" src="./img/커피.jpg" width="350px" style="float:left">
+                     <img src="./img/삽교호놀공.jpg" width="350px"  style="float:left">                    
+                </div>
+            </div>
+        </div>
+        <footer id="main_footer">
+            <div id="wrap_footer_desc">
+                <div style="color:black; text-shadow: 1px 2px  rgb(141, 141, 141);">© 2022 WEB_PROGRAMMING</div>
+                <div>주) 충남관광 도우미 (김민정, 배지훈) </div>
+                <div>TEL) 041-000-0000</div>
+                <div>EMAIL) EMAIL@EMAIL.com</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

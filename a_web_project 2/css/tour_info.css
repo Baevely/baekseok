@@ -1,0 +1,92 @@
+/*  */
+
+#wrap_tourinfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
+/* 투어 카테고리선택 div */
+#cat_div{
+    display: flex;
+    width: 100%;
+    border: 2px solid white;
+}
+
+#cat_div input[name='func']{
+    display: none;
+}
+
+#cat_div label{
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.7em;
+    font-weight: 900;
+    text-align: center;
+    
+    border: 1px solid white;
+    /* border-right: 1px solid rgb(196, 196, 196);  */
+    /* border-bottom: 1px solid rgb(196, 196, 196);  */
+    /* background-color: rgb(255, 245, 157); */
+    background-color: rgb(238, 238, 238);
+}
+
+#cat_div label div:hover{
+    background-color: rgb(202, 202, 202);
+}
+/* script 카테고리 선택 css */
+.cat_clicked{
+    font-weight: 800;
+    background-color: rgb(202, 202, 202);
+}
+
+
+/* 지역선택 div */
+#local_div{
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2px;
+}
+
+#local_div label{
+    display: inline-block;
+    width: 20%;
+    height: 33px;
+    line-height: 33px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    border: 1px inset rgb(159, 159, 159); 
+    border-left: none;
+    border-top: none;
+    border-collapse: collapse;
+}
+
+#local_div label:nth-child(5n){
+    border-right: none;
+}
+
+input[name="local_nm"]{
+   display: none;
+}
+
+#local_div label:hover{
+    background-color: rgb(255, 248, 184);
+}
+
+/* script 지역선택 css */
+.local_clicked{
+    font-weight: 800;
+    background-color: rgb(255, 248, 184);
+    /* background-color: rgb(234, 234, 234); */
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+/* 본문 */
+

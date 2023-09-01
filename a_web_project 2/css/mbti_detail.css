@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Kangbujang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_06@1.0/Kangbujang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Kangbujang', cursive;
+}
+
+div {
+    margin: auto;
+    max-width: 800px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: royalblue;
+    text-shadow: 3px 3px 3px gray;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 3px 3px 3px aliceblue;
+}
+
+#intro {
+    text-align: center;
+    font-weight: 600;
+}
+
+li dt{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+dl{
+    padding-right: 45px;
+}

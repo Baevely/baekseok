@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tour_info.css">
+</head>
+
+<body>
+    <div id="wrap_all">
+        <header id="header">
+            <a href="./main.html">
+                <div id="logo1_div"><img src=./img/logo1.png alt="로고"></div>
+            </a>
+        </header>
+        <div id="wrap_contents">
+            <nav id="main_nav">
+                <ul>
+                    <li id="li_menu">LIST</li>
+                    <a href="tour_info_1.html">
+                        <li>충청남도 관광정보</li>
+                    </a>
+                    <a href="main.html">
+                        <li>MBTI 충남 여행</li>
+                    </a>
+                    <a href="main.html">
+                        <li>이 달의 이벤트</li>
+                    </a>
+                    <a href="main.html">
+                        <li>충남의 소리</li>
+                    </a>
+                </ul>
+            </nav>
+            <div id="main_contents">
+                <div id="wrap_tourinfo">
+                    <form action="tour_info_1.html" id="tour_cat">
+                        <div id="cat_div">
+                            <input type="radio" name="func" id="func_tour" value="tour" />
+                            <label for='func_tour'>
+                                <div>충청남도 관광명소</div>
+                            </label>
+
+                            <input type="radio" name="func" id="func_theme" value="theme" />
+                            <label for='func_theme'>
+                                <div>충청남도 테마여행</div>
+                            </label>
+
+                            <input type="radio" name="func" id="func_food" value="food" />
+                            <label for='func_food'>
+                                <div>충청남도 맛집</div>
+                            </label>
+
+                            <input type="radio" name="func" id="func_stay" value="stay" />
+                            <label for="func_stay">
+                                <div>충청남도 숙박업소</div>
+                            </label>
+                        </div>
+                    </form>
+                    <form action="tour_info_1.html" id="tour_local">
+                        <div id="local_div">
+                            <input type="checkbox" name="local_nm" id="local_1" class="local_nm" value="천안">
+                            <label for="local_1">
+                                천안시
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_2" class="local_nm" value="공주">
+                            <label for="local_2">
+                                공주시
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_3" class="local_nm" value="보령">
+                            <label for="local_3">
+                                보령시
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_4" class="local_nm" value="아산">
+                            <label for="local_4">
+                                아산시
+                            </label>
+
+                            <input type="checkbox" name="local_nm" id="local_5" class="local_nm" value="서산">
+                            <label for="local_5">
+                                서산시
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_6" class="local_nm" value="논산">
+                            <label for="local_6">
+                                논산시
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_7" class="local_nm" value="계룡">
+                            <label for="local_7">
+                                계룡시
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_8" class="local_nm" value="당진">
+                            <label for="local_8">
+                                당진시
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_9" class="local_nm" value="금산">
+                            <label for="local_9">
+                                금산군
+                            </label>
+
+                            <input type="checkbox" name="local_nm" id="local_10" class="local_nm" value="부여">
+                            <label for="local_10">
+                                부여군
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_11" class="local_nm" value="서천">
+                            <label for="local_11">
+                                서천군
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_12" class="local_nm" value="청양">
+                            <label for="local_12">
+                                청양군
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_13" class="local_nm" value="홍성">
+                            <label for="local_13">
+                                홍성군
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_14" class="local_nm" value="예산">
+                            <label for="local_14">
+                                예산군
+                            </label>
+                            <input type="checkbox" name="local_nm" id="local_15" class="local_nm" value="태안">
+                            <label for="local_15">
+                                <div>태안군</div>
+                            </label>
+                        </div>
+                    </form>
+                    <div id="tour_main">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="main_footer">
+
+        </footer>
+    </div>
+
+</body>
+<script>
+    window.onload = function (e) {
+        let checked_cat = document.querySelectorAll('#tour_cat label div');
+        for (let item = 0; item < checked_cat.length; item++) {
+            checked_cat[item].addEventListener('click', function (event) {
+                let target_cat = event.target;
+                //alert(target_cat);
+
+                for (let i = 0; i < checked_cat.length; i++) {
+                    if (target_cat != checked_cat[i]) {
+                        checked_cat[i].classList.remove('cat_clicked');
+                    } else {
+                        target_cat.classList.add('cat_clicked');
+                    }
+                }
+            })
+        }
+
+
+        let checked_local = document.querySelectorAll('#tour_local label');
+        for (let item = 0; item < checked_local.length; item++) {
+            checked_local[item].addEventListener('click', function (event) {
+                let local_label = event.target;
+                //alert(local_label);
+                local_label.classList.toggle('local_clicked');
+            })
+        }
+    }
+
+
+
+</script>
+
+</html>
